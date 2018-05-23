@@ -1,0 +1,60 @@
+body:not(.seethrough) img {
+  visibility: hidden !important;
+}
+
+body:not(.seethrough) a {
+  background-image: none !important;
+}
+
+
+body.seethrough g {
+  fill: rgba(210,210,210,.75);
+}
+
+#jsPanel-1 {
+  z-index: 2147483641;
+}
+
+.flx {
+	display: flex;
+	container: justify-content;
+}
+
+.panel-srs-inner {
+	margin-bottom: 10px;
+}
+
+.flx > * {
+	flex-grow: 1;
+	width: 25%;
+}
+
+#panel-srs-invisible-text > .text {
+	font-weight: bold;
+}
+
+#panel-srs-invisible-text > .link {
+	font-weight: bold
+}
+
+#panel-srs-invisible-text:not(.haslink) > .link {
+	display: none;
+}
+
+#panel-srs-invisible-text > .noticevisible {
+	display: none;
+}
+
+#panel-srs-invisible-text.visible > .noticevisible {
+	display: inline;
+}
+
+#panel-srs-invisible-text.visible > .noticeinvisible {
+	display: none;
+}
+
+#panel-srs-invisible-text.visible > .noticevisible {
+	color: gray;
+	font-style: italic;
+	font-weight: normal;
+}
